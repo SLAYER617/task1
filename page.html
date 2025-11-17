@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up for GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafbfc;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .signup-container {
+            background: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            max-width: 380px;
+            padding: 32px 30px;
+            box-shadow: 0 4px 12px rgba(27,31,35,0.05);
+        }
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .social-btn {
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #e1e4e8;
+            background: #f6f8fa;
+            color: #24292e;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .signup-container h2 {
+            margin-bottom: 18px;
+            font-size: 21px;
+            font-weight: normal;
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        input[type="email"], input[type="password"], input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d1d5da;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        .hint {
+            font-size: 12px;
+            color: #586069;
+            margin-top: 2px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 6px;
+        }
+        .signup-btn {
+            width: 100%;
+            background: #2da44e;
+            color: #fff;
+            padding: 11px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .terms {
+            margin-top: 14px;
+            font-size: 11px;
+            color: #6a737d;
+            text-align: center;
+        }
+        .terms a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form class="signup-container">
+        <h2>Sign up for GitHub</h2>
+        <div class="social-buttons">
+            <button type="button" class="social-btn">Continue with Google</button>
+            <button type="button" class="social-btn">Continue with Apple</button>
+        </div>
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required>
+            <div class="hint">Password must be at least 15 characters OR at least 8 characters including a number and a lowercase letter.</div>
+        </div>
+        <div class="form-group">
+            <label for="username">Username*</label>
+            <input type="text" id="username" name="username" required>
+            <div class="hint">Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.</div>
+        </div>
+        <div class="form-group">
+            <label for="country">Your Country/Region*</label>
+            <select id="country" name="country" required>
+                <option value="">Select...</option>
+                <option value="PK">Pakistan</option>
+                <option value="IN">India</option>
+                <option value="US">United States</option>
+                <option value="GB">United Kingdom</option>
+                <option value="CA">Canada</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">Receive occasional product updates and announcements.</label>
+        </div>
+        <button class="signup-btn" type="submit">Create account</button>
+        <div class="terms">
+            By creating an account, you agree to the <a href="#">Terms of Service</a>. For more information about GitHub's privacy practices, see the <a href="#">GitHub Privacy Statement</a>.
+        </div>
+    </form>
+</body>
+</html>
